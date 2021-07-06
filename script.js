@@ -38,7 +38,7 @@
 
         //to append image to card
         const photo = document.createElement('img');
-        const defaultImg = "images/signpost.jpg";
+        const defaultImg = "signpost.jpg";
         if(destPhoto.length !== 0){
             photo.setAttribute('src',destPhoto);
         }
