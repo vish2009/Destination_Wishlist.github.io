@@ -14,35 +14,43 @@
     <!-- Our JavaScript -->
     <script src="script.js" defer></script>
 </head>
-<body style="background-color: aqua;">
+<body>
 	
 	<header>
         <h1>Vacation Destinations Wish List</h1>
-        <p>Found exciting places to visition on your next vacation? Use the form below to add them to your wish list</p>
+        <p>Found exciting places to visit on your next vacation? Use the form below to add them to your wish list</p>
     </header>
 	
 	<main>
-        <h2 id="title">Enter Destination Details</h2><br><br>
-        <div id="destinations_container">
-            <div id="formdiv">
-                <form id="destination_details_form">
-                    <label for="name">Destination name</label>
-                    <input required type="text" id="name" placeholder="Enter the name of the destination">
-        
-                    <label for="location">Location</label>
-                    <input required type="text" id="location" placeholder="Where is it located?">
-                    
-                    <label for="photo">Image URL</label>
-                    <input type="url" id="photo" placeholder="Enter an image url of the place">
-        
-                    <label for="description">Description</label>
-                    <textarea type="text" id="description" placeholder="Describe your destination in short?"></textarea>
-        
-                    <button type="submit">Add to list</button>
-                </form>
+		<form id="destination_details_form">
+			
+			<label for="name">Destination name *</label>
+            <input required type="text" id="name" placeholder="Enter the name of the destination">
+
+            <label for="location">Location *</label>
+            <input required type="text" id="location" placeholder="Where is it located?">
+			
+			<label for="photo">Image URL</label>
+            <input type="url" id="photo" placeholder="Enter an image url of the place">
+
+            <label for="description">Description</label>
+            <textarea type="text" id="description" placeholder="Describe your destination in short?"></textarea>
+
+			<button type="submit">Add to list</button>
+		</form>
+		
+		<article>
+            <h2 id="title">Enter Destination Details</h2>
+            <div id="destinations_container">
             </div>
-        </div>
+        </article>
+
 	</main>
+	<!-- my footer -->
+	    <div class="footer">
+		<p>This Web-Application is developed by Vishal Lodha. Follow me on github For More Such Applications Click Here => <a href="https://github.com/vish2009" target="_blank" style="color: black;">Vish2009</a>
+		</p>
+	    </div>
 </body>
 
 </html>
