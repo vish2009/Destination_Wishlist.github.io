@@ -75,7 +75,6 @@
 
         //remove button with event listener on it
         const removeButton = document.createElement('button');
-        removeButton.className = 'removeButton'
         removeButton.innerText = 'Remove';
         removeButton.addEventListener('click',(e)=>{
             e.target.parentElement.parentElement.remove();
@@ -90,7 +89,7 @@
     }
 
     function updateWishlistTitle(){
-        if(destinationList.children.length === 1){
+        if(destinationList.children.length === 0){
             myTitle.innerText = 'Enter Destination Details';
         }
         else{
